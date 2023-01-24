@@ -28,14 +28,6 @@ export default function Home() {
         <button name="Contact Us">Contact Us</button>
 
         <a>
-          <button></button>
-        </a>
-
-        <a>
-          <button></button>
-        </a>
-
-        <a>
           <span>
             <img />
           </span>

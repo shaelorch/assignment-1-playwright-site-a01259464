@@ -25,21 +25,6 @@ export default function Home() {
             hands-on experience in their field.</p>
 
         <button name="More About Us">More About Us</button>
-        <button name="Contact Us">Contact Us</button>
-
-        <a>
-          <button></button>
-        </a>
-
-        <a>
-          <button></button>
-        </a>
-
-        <a>
-          <span>
-            <img />
-          </span>
-        </a>
         
       </main>
 

@@ -26,20 +26,6 @@ export default function Home() {
 
         <button name="More About Us">More About Us</button>
         <button name="Contact Us">Contact Us</button>
-
-        <a>
-          <button></button>
-        </a>
-
-        <a>
-          <button></button>
-        </a>
-
-        <a>
-          <span>
-            <img />
-          </span>
-        </a>
         
       </main>
 

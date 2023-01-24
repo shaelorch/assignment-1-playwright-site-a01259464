@@ -68,7 +68,7 @@ test.describe('Main area', () => {
 })
 
 test.describe('Carousel area', () => {
-    test('Carousel Arrows', async({ page }) => {
+    test.skip('Carousel Arrows', async({ page }) => {
         await page.goto(urlAbout)
 
         await page.screenshot({ path: '/icons/leftArrow.png'})

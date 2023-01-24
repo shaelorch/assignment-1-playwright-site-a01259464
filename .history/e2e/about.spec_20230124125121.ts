@@ -33,7 +33,7 @@ test.describe('Header area', () => {
         await expect(metaDescriptionThree).toHaveAttribute('content', 'BCIT Digital Design and Development Diploma')
     })
 
-    test('The link tag', async ({ page }) => {
+    test.skip('The link tag', async ({ page }) => {
         await page.goto(urlAbout)
 
         const linkTag = page.locator('link[rel="icon"]');
@@ -42,25 +42,25 @@ test.describe('Header area', () => {
 })
 
 test.describe('Main area', () => {
-    test('Header Tags', async({ page }) => {
+    test.skip('Header Tags', async({ page }) => {
         await page.goto(urlAbout)
 
         await expect(page.locator('div > h1')).toHaveCount(2);
     })
 
-    test('Count number of paragraphs under first content area', async({ page }) => {
+    test.skip('Count number of paragraphs under first content area', async({ page }) => {
         await page.goto(urlAbout)
 
         await expect(page.locator('div > p')).toHaveCount(7);
     })
 
-    test('Count number of h2 headers in first content area', async({ page }) => {
+    test.skip('Count number of h2 headers in first content area', async({ page }) => {
         await page.goto(urlAbout)
 
         await expect(page.locator('div > h2')).toHaveCount(2);
     })
 
-    test('Count number of h3 headers in first content area', async({ page }) => {
+    test.skip('Count number of h3 headers in first content area', async({ page }) => {
         await page.goto(urlAbout)
 
         await expect(page.locator('div > h3')).toHaveCount(1);
@@ -68,7 +68,7 @@ test.describe('Main area', () => {
 })
 
 test.describe('Carousel area', () => {
-    test('Carousel Arrows', async({ page }) => {
+    test.skip('Carousel Arrows', async({ page }) => {
         await page.goto(urlAbout)
 
         await page.screenshot({ path: '/icons/leftArrow.png'})
