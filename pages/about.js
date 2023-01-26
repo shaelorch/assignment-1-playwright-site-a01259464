@@ -11,6 +11,8 @@ export default function Home() {
         <meta property='og:title' content="Assignment #1 - About Us Page" />
         <meta property='og:description' content="BCIT Digital Design and Development Diploma" />
         <link rel="icon" href="/favicon.png" />
+
+
       </Head>
 
       <main className={styles.main}>
@@ -52,6 +54,32 @@ export default function Home() {
        
        <img src='/icons/leftArrow.png'/>
        <img src='/icons/rightArrow.png'/>
+
+    
+
+       <ul>
+         <li>Applied & Natural Sciences</li>
+         <li>Business & Media</li>
+         <li>Computing & IT</li>
+         <li>Engineerin</li>
+         <li>Health Sciences</li>
+         <li>Trades & Apprenticeships</li>
+       </ul>
+
+        <a>
+          <span>
+            <img/>
+          </span>
+        </a>
+
+        <a>
+          <span>
+            <img/>
+          </span>
+        </a>
+      
+
+       
        
       </main>
 

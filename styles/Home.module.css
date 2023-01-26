@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color: teal;
 }
 
 .main {
@@ -10,6 +11,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: teal;
+}
+
+#carouselImage {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+
+}
+
+#testOnImageHere {
+  background-color: rgba(16, 46, 53, 0.5);
+  padding: 10px;
+  margin: 0px 50px;
+
 }
 
 .footer {
@@ -19,6 +39,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: teal;
 }
 
 .footer a {
