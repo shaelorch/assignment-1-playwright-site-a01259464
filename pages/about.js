@@ -51,9 +51,18 @@ export default function Home() {
         <div><h2></h2></div>
 
         <div><h3></h3></div>
+
+        <div id={styles.carouselImage} >
+          <img src='/icons/leftArrow.png'/>
+          <img src='/icons/rightArrow.png'/>
+
+          <div id={styles.testOnImageHere}>
+
+          </div>
+
+        </div>
        
-       <img src='/icons/leftArrow.png'/>
-       <img src='/icons/rightArrow.png'/>
+      
 
     
 
