@@ -16,6 +16,7 @@ export default function Home() {
       <meta property='og:description' content='BCIT Digital Design and Development Diploma' />
       <link rel="icon" href="/favicon.png" />
     </Head>
+    <img src="/background-images/backgroundMountain.jpg" style={{position:'absolute', width:'100%', height:'100%', top:0, zIndex:3}}/>
 
     <main className={styles.main}>
 

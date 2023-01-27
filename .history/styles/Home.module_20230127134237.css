@@ -9,6 +9,7 @@
 .homeContainer {
   padding: 0 2rem;
   background-color: var(--quaternary-color);
+  background-image: url(/background-images/backgroundMountain.jpg);
  
 }
 
@@ -23,7 +24,6 @@
   background-color: var(--quaternary-color);
   
 }
-
 
 #carouselImage {
   height: 200px;

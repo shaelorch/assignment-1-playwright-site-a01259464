@@ -6,7 +6,9 @@ import Menu from '../components/menu'
 
 export default function Home() {
   return (<>
-  <div>
+  <div style={{ backgroundImage: 'url(/background-images/backgroundMountain.jpg)',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize:'cover'}}>
     <Menu />
      <div className={styles.container}>
     <Head>

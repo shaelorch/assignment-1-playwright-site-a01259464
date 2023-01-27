@@ -8,7 +8,8 @@ import Menu from '../components/menu'
 
 export default function Contact() {
   return (
-    <><Menu /><div className={styles.container}>
+    <Menu/>
+    <div className={styles.container}>
       <Head>
         <title>Contact Us</title>
         <meta name="author" content="MDIA 2109" />
@@ -22,60 +23,60 @@ export default function Contact() {
       <main className={styles.main}>
 
         <div>
-          <h1>Contact Us</h1>
+            <h1>Contact Us</h1>
         </div>
 
         <div>
-          <p>Want to discuss? Lets chat!</p>
+            <p>Want to discuss? Lets chat!</p>
         </div>
 
         <div>
-          <form>
-            <fieldset>
-              <table>
-                <thead>
-                  First Name
-                  <tr><input id="firstName" placeholder='First Name Here'></input>
-
-                    <input id="lastName" placeholder='Last Name Here'></input>
-                  </tr>
+            <form>
+              <fieldset>
+                <table>
                   <thead>
+                    First Name
+                    <tr><input id="firstName" placeholder='First Name Here'></input>
+                    
+                        <input id="lastName" placeholder='Last Name Here'></input> 
+                   </tr>
+                   <thead>
                     Email
                     <tr>
-                      <input id="email" placeholder='Email Here'></input>
+                    <input id="email" placeholder='Email Here'></input>
                     </tr>
-
+                    
+                   </thead>
+                    
+                    
                   </thead>
+                </table>
 
-
-                </thead>
-              </table>
-
-            </fieldset>
-
-            <button>
-              <Link href="/">
-              </Link>
-            </button>
-          </form>
+              </fieldset>
+              
+              <button>
+                <Link href="/">
+                </Link>
+              </button>
+            </form>
         </div>
 
-        =
+       =
+       
 
 
+       
 
 
+    
 
-
-
-
-
+        
 
       </main>
 
       <footer className={styles.footer}>
-
+        
       </footer>
-    </div></>
+    </div>
   )
 }

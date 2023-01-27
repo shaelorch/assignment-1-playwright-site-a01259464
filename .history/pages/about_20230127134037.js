@@ -6,7 +6,7 @@ import Menu from '../components/menu'
 
 export default function About() {
   return (
-    <><Menu /><div className={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>About Us</title>
         <meta name="author" content="MDIA 2109" />
@@ -54,49 +54,49 @@ export default function About() {
 
         <div><h3></h3></div>
 
-        <div id={styles.carouselImage}>
-          <img src='/icons/leftArrow.png' />
-          <img src='/icons/rightArrow.png' />
+        <div id={styles.carouselImage} >
+          <img src='/icons/leftArrow.png'/>
+          <img src='/icons/rightArrow.png'/>
 
           <div id={styles.testOnImageHere}>
 
           </div>
 
         </div>
+       
+      
 
+    
 
-
-
-
-        <ul>
-          <li>Applied & Natural Sciences</li>
-          <li>Business & Media</li>
-          <li>Computing & IT</li>
-          <li>Engineerin</li>
-          <li>Health Sciences</li>
-          <li>Trades & Apprenticeships</li>
-        </ul>
+       <ul>
+         <li>Applied & Natural Sciences</li>
+         <li>Business & Media</li>
+         <li>Computing & IT</li>
+         <li>Engineerin</li>
+         <li>Health Sciences</li>
+         <li>Trades & Apprenticeships</li>
+       </ul>
 
         <a>
           <span>
-            <img />
+            <img/>
           </span>
         </a>
 
         <a>
           <span>
-            <img />
+            <img/>
           </span>
         </a>
+      
 
-
-
-
+       
+       
       </main>
 
       <footer className={styles.footer}>
-
+        
       </footer>
-    </div></>
+    </div>
   )
 }

@@ -6,12 +6,6 @@
  
 }
 
-.homeContainer {
-  padding: 0 2rem;
-  background-color: var(--quaternary-color);
- 
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -20,10 +14,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--quaternary-color);
+  background-color: blue;
   
 }
-
 
 #carouselImage {
   height: 200px;
@@ -50,7 +43,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: var(--quaternary-color);
+  background-color: teal;
 }
 
 .footer a {

@@ -51,6 +51,7 @@ export default function Home() {
 
     </footer>
   </div>
+  <img src="/background-images/backgroundMountain.jpg" style={{position:'absolute'}}/>
     
     
   </div></>

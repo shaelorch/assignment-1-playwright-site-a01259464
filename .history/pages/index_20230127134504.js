@@ -5,10 +5,8 @@ import styles from '../styles/Home.module.css'
 import Menu from '../components/menu'
 
 export default function Home() {
-  return (<>
-  <div>
-    <Menu />
-     <div className={styles.container}>
+  return (<><Menu />
+  <div className={styles.container}>
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />
@@ -50,10 +48,6 @@ export default function Home() {
     <footer className={styles.footer}>
 
     </footer>
-  </div>
-    
-    
   </div></>
- 
   )
 }

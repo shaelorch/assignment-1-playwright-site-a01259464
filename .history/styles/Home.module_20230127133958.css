@@ -6,12 +6,6 @@
  
 }
 
-.homeContainer {
-  padding: 0 2rem;
-  background-color: var(--quaternary-color);
- 
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -23,7 +17,6 @@
   background-color: var(--quaternary-color);
   
 }
-
 
 #carouselImage {
   height: 200px;
