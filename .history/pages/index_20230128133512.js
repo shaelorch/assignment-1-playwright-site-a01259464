@@ -10,14 +10,14 @@ export default function Home() {
     <Menu />
     
     
+        <a href='/about'>
+        <span className={styles.arrowCont}>
+        <img src='/icons/downwardArrow.png' />
+        </span>
+      </a>
     
   <div className={styles.homeContainer}>
 
-        <a href='/about'>
-        <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
-        </span>
-      </a>
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />

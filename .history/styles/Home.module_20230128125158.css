@@ -24,52 +24,31 @@
 }
 
 .main {
-  padding-top:30%;
   min-height: 100vh;
+  margin-top:20%;
   margin-left: 25%;
   margin-right: 30%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   background-color: transparent;
-  line-height: 1.5;
+
   
 }
 
 .button {
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 6px;
+  border-radius: 5px;
   height: 25px;
-  padding-right:10px;
-  margin-left: 10px;
-  
-}
-
-.button:hover {
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 6px;
-  height: 25px;
-  padding-right:10px;
-  color:var(--quaternary-color);
-  
+  width:100%;
 }
 
 .buttonCont {
-  display: flex;
-  
-}
-
-.arrowCont {
-  display: flex;
-  justify-content: right;
-  position:relative;
-  background-color: transparent;
-  top:580px;
-  
+  display:flex;
+  flex-direction: row;
 }
 
 

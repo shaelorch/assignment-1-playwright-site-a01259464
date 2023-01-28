@@ -8,16 +8,7 @@ export default function Home() {
   return (<>
   
     <Menu />
-    
-    
-    
   <div className={styles.homeContainer}>
-
-        <a href='/about'>
-        <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
-        </span>
-      </a>
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />
@@ -30,32 +21,31 @@ export default function Home() {
 
 
 
-    
+      <hr className='solid'>
       <h1>An investment in knowledge pays the best interest.</h1>
-      
-      <hr className={styles.solid}></hr>
+      </hr>
       
 
       <p>Different than a college or university, the British Columbia Institute of Technology offers practical,
         flexible, applied education with instructors who have direct,
         hands-on experience in their field.</p>
-
     
+      <button name="More About Us">More About Us</button>
+      <button name="Contact Us">Contact Us</button>
 
-      <div className={styles.buttonCont}>
-         <a href='/about'>
-          <button className={styles.button} name="More About Us">More About Us</button>
-          </a>
+      <a>
+        <button></button>
+      </a>
 
-          <a href='/contact'>
-          <button className={styles.button} name="Contact Us">Contact Us</button>
-          </a>
+      <a>
+        <button></button>
+      </a>
 
-        
-      </div>
-         
-     
-    
+      <a>
+        <span>
+          <img />
+        </span>
+      </a>
 
     </main>
 

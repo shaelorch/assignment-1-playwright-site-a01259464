@@ -8,16 +8,7 @@ export default function Home() {
   return (<>
   
     <Menu />
-    
-    
-    
   <div className={styles.homeContainer}>
-
-        <a href='/about'>
-        <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
-        </span>
-      </a>
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />
@@ -42,7 +33,7 @@ export default function Home() {
 
     
 
-      <div className={styles.buttonCont}>
+      <div>
          <a href='/about'>
           <button className={styles.button} name="More About Us">More About Us</button>
           </a>
@@ -55,7 +46,11 @@ export default function Home() {
       </div>
          
      
-    
+      <a>
+        <span>
+          <img />
+        </span>
+      </a>
 
     </main>
 

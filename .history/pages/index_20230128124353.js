@@ -8,16 +8,7 @@ export default function Home() {
   return (<>
   
     <Menu />
-    
-    
-    
   <div className={styles.homeContainer}>
-
-        <a href='/about'>
-        <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
-        </span>
-      </a>
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />
@@ -30,8 +21,8 @@ export default function Home() {
 
 
 
-    
-      <h1>An investment in knowledge pays the best interest.</h1>
+    <div style={{lineHeight:1.5}}>
+    <h1>An investment in knowledge pays the best interest.</h1>
       
       <hr className={styles.solid}></hr>
       
@@ -40,22 +31,24 @@ export default function Home() {
         flexible, applied education with instructors who have direct,
         hands-on experience in their field.</p>
 
-    
+    </div>
 
-      <div className={styles.buttonCont}>
-         <a href='/about'>
-          <button className={styles.button} name="More About Us">More About Us</button>
-          </a>
+      <button name="More About Us">More About Us</button>
+      <button name="Contact Us">Contact Us</button>
 
-          <a href='/contact'>
-          <button className={styles.button} name="Contact Us">Contact Us</button>
-          </a>
+      <a>
+        <button></button>
+      </a>
 
-        
-      </div>
-         
-     
-    
+      <a>
+        <button></button>
+      </a>
+
+      <a>
+        <span>
+          <img />
+        </span>
+      </a>
 
     </main>
 

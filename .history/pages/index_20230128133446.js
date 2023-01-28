@@ -9,15 +9,15 @@ export default function Home() {
   
     <Menu />
     
-    
-    
-  <div className={styles.homeContainer}>
-
+    <div className={styles.arrowCont}>
         <a href='/about'>
-        <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
+        <span>
+        <img src='/icons/downwardArrow.png' style={{display:'flex', left:500}}/>
         </span>
       </a>
+     </div>
+  <div className={styles.homeContainer}>
+
     <Head>
       <title>Home</title>
       <meta name="author" content="MDIA 2109" />

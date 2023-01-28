@@ -76,15 +76,15 @@ export default function About() {
           <li>Trades & Apprenticeships</li>
         </ul>
 
-        <a href='/'>
+        <a>
           <span>
-          <img src='/icons/upwardArrow.png' />
+          <img src='/icons/leftArrow.png' />
           </span>
         </a>
 
-        <a href='/contact'>
+        <a>
           <span>
-          <img src='/icons/downwardArrow.png' />
+          <img src='/icons/rightArrow.png' />
           </span>
         </a>
 

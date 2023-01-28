@@ -15,7 +15,7 @@ export default function Home() {
 
         <a href='/about'>
         <span className={styles.arrowCont}>
-        <img src='/icons/downwardArrow.png' style={{width:50, height:60}}/>
+        <img src='/icons/downwardArrow.png' style={{width:100}}/>
         </span>
       </a>
     <Head>

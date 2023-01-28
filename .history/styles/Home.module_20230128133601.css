@@ -65,10 +65,8 @@
 
 .arrowCont {
   display: flex;
-  justify-content: right;
+  justify-content: bottom;
   position:relative;
-  background-color: transparent;
-  top:580px;
   
 }
 

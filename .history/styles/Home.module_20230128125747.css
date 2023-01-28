@@ -32,9 +32,10 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  
+  align-items: center;
   background-color: transparent;
-  line-height: 1.5;
+
   
 }
 
@@ -44,32 +45,13 @@
   border-radius: 6px;
   height: 25px;
   padding-right:10px;
-  margin-left: 10px;
   
-}
-
-.button:hover {
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 6px;
-  height: 25px;
-  padding-right:10px;
-  color:var(--quaternary-color);
   
 }
 
 .buttonCont {
-  display: flex;
-  
-}
-
-.arrowCont {
-  display: flex;
-  justify-content: right;
-  position:relative;
-  background-color: transparent;
-  top:580px;
-  
+  display:flex;
+  flex-direction: row;
 }
 
 

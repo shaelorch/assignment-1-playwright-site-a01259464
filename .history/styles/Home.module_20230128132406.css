@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   background-color: transparent;
   line-height: 1.5;
   
@@ -63,14 +63,7 @@
   
 }
 
-.arrowCont {
-  display: flex;
-  justify-content: right;
-  position:relative;
-  background-color: transparent;
-  top:580px;
-  
-}
+
 
 
 #carouselImage {

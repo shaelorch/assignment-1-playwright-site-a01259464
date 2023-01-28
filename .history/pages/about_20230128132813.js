@@ -82,7 +82,7 @@ export default function About() {
           </span>
         </a>
 
-        <a href='/contact'>
+        <a>
           <span>
           <img src='/icons/downwardArrow.png' />
           </span>
