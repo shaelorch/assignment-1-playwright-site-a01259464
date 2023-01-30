@@ -104,8 +104,8 @@
 }
 
 .slide {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 500px;
   position: absolute;
   transition: all 0.5s;
   display: flex;

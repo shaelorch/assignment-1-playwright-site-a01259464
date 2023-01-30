@@ -97,19 +97,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   display:flex;
-  justify-content: center;
+  
   align-items: center;
   margin: 40px 0px;
   /* overflow: hidden; */
 }
 
 .slide {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
   position: absolute;
   transition: all 0.5s;
-  display: flex;
-  justify-content: center;
 }
 
 .hrLines {

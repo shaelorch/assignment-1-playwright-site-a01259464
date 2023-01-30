@@ -104,12 +104,9 @@
 }
 
 .slide {
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
   position: absolute;
   transition: all 0.5s;
-  display: flex;
-  justify-content: center;
 }
 
 .hrLines {

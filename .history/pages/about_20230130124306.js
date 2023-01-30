@@ -71,35 +71,35 @@ export default function About() {
        
       
         <div id={styles.carouselImage}>
-            <div className={styles.slide}>
+            <div >
               <div>
                 <img style={{height:200}} src="carousel-images/0.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slide}>
+            <div>
               <div>
                 <img style={{height:200}} src="carousel-images/1.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slide}>
+            <div>
               <div>
                 <img style={{height:200}} src="carousel-images/2.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
             
-            <div className={styles.slide}>
+            <div >
               <div>
                 <img style={{height:200}} src="carousel-images/3.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slide}>
+            <div >
               <div>
                 <img style={{height:200}} src="carousel-images/4.jpg"/>
               </div> 
