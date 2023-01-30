@@ -6,10 +6,6 @@
  
 }
 
-#firstName, #lastName, #email {
-  background-color: white;
-}
-
 .solid {
   border-top: 4px solid var(--secondary-color);
   border-bottom: 0px;
@@ -108,8 +104,9 @@
 }
 
 .slideImg {
-  width: 100%;
+  width: 1500px;
   height: 300px;
+  
   position: relative;
   display: flex;
   justify-content: center;

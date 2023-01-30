@@ -157,8 +157,11 @@ export default function About() {
           <div key={word.id}>
           <p>{word.value}</p>
           </div>
-        ))}
+        ))};
 
+        <div>
+          <p>{words.value}</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>

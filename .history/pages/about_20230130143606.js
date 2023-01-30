@@ -11,37 +11,29 @@ export default function About() {
   
     let words = [
         {
-            id : 0,
-            value : "Achieve Excellence"
+            "id" : 0,
+            "value" : "Achieve Excellence"
         },
         {
-            id : 1,
-            value : "Embrace Innovation"
+            "id" : 1,
+            "value" : "Embrace Innovation"
         },
         {
-            id : 2,
-            value : "Champion Diversity"
+            "id" : 2,
+            "value" : "Champion Diversity"
         },
         {
-            id : 3,
-            value : "Pursue Collaboration"
+            "id" : 3,
+            "value" : "Pursue Collaboration"
         },
         {
-            id: 4,
-            value : "Engage With Respect"
+            "id": 4,
+            "value" : "Engage With Respect"
         }
     ]
 
-      const wordValue = words.map(word => {
-        const container = {};
 
-        container[word.id] = word.value;
 
-        return container;
-      })
-      console.log(wordValue);
-
-    
         
   return (
     <><Menu /><div className={styles.container}>
@@ -109,7 +101,7 @@ export default function About() {
               </div> 
               
             </div><div id={styles.testOnImageHere}>
-             
+             <p>{words.value}</p>
             </div>
 
             <div className={styles.slideImg}>
@@ -152,13 +144,6 @@ export default function About() {
            </div>
             
         </div>
-
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
-          </div>
-        ))}
-
               
         
         <div style={{display:'inline-block'}}>
@@ -186,4 +171,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+}

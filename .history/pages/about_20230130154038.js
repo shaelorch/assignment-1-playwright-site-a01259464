@@ -159,6 +159,9 @@ export default function About() {
           </div>
         ))}
 
+        <div>
+          <p>{words.value}</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>

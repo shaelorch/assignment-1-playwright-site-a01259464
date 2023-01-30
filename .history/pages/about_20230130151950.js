@@ -41,7 +41,9 @@ export default function About() {
       })
       console.log(wordValue);
 
-    
+      var str = JSON.stringify(words);
+
+      console.log(str);
         
   return (
     <><Menu /><div className={styles.container}>
@@ -153,12 +155,9 @@ export default function About() {
             
         </div>
 
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
-          </div>
-        ))}
-
+        <div>
+          <p>{words.value}</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>
@@ -186,4 +185,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+}

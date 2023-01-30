@@ -37,12 +37,12 @@ export default function Contact() {
                   First Name
                   <tr><input id={styles.firstName} placeholder='First Name Here'></input>
 
-                    <input id={styles.lastName} placeholder='Last Name Here'></input>
+                    <input id="lastName" placeholder='Last Name Here'></input>
                   </tr>
                   <thead>
                     Email
                     <tr>
-                      <input id={styles.email} placeholder='Email Here'></input>
+                      <input id="email" placeholder='Email Here'></input>
                     </tr>
 
                   </thead>

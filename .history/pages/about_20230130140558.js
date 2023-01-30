@@ -3,45 +3,17 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Menu from '../components/menu'
 import ArrowKeys from '../components/arrows'
-
+import words from '../data/words.json'
 
 
 export default function About() {
 
-  
-    let words = [
-        {
-            id : 0,
-            value : "Achieve Excellence"
-        },
-        {
-            id : 1,
-            value : "Embrace Innovation"
-        },
-        {
-            id : 2,
-            value : "Champion Diversity"
-        },
-        {
-            id : 3,
-            value : "Pursue Collaboration"
-        },
-        {
-            id: 4,
-            value : "Engage With Respect"
-        }
-    ]
+  const slides = document.querySelectorAll(".slide");
 
-      const wordValue = words.map(word => {
-        const container = {};
-
-        container[word.id] = word.value;
-
-        return container;
-      })
-      console.log(wordValue);
-
-    
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${indx * 100}%)`;
+  });
+        
         
   return (
     <><Menu /><div className={styles.container}>
@@ -103,38 +75,36 @@ export default function About() {
        
       
         <div id={styles.carouselImage}>
-            <div className={styles.slideImg}>
-              <div className={styles.slide}>
+            <div className={styles.slide}>
+              <div>
                 <img style={{height:200}} src="carousel-images/0.jpg"/>
               </div> 
               
-            </div><div id={styles.testOnImageHere}>
-             
-            </div>
+            </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slideImg}>
-              <div className={styles.slide}>
+            <div className={styles.slide}>
+              <div>
                 <img style={{height:200}} src="carousel-images/1.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slideImg}>
-              <div className={styles.slide}>
+            <div className={styles.slide}>
+              <div>
                 <img style={{height:200}} src="carousel-images/2.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
             
-            <div className={styles.slideImg}>
-              <div className={styles.slide}>
+            <div className={styles.slide}>
+              <div>
                 <img style={{height:200}} src="carousel-images/3.jpg"/>
               </div> 
               
             </div><div id={styles.testOnImageHere}>{words.value}</div>
 
-            <div className={styles.slideImg}>
-              <div className={styles.slide}>
+            <div className={styles.slide}>
+              <div>
                 <img style={{height:200}} src="carousel-images/4.jpg"/>
               </div> 
               
@@ -142,7 +112,7 @@ export default function About() {
 
 
 
-           <div style={{position:'absolute'}} class="next">
+           <div style={{position:'absolute'}}>
             <a style={{marginRight:120}}>
               <img src='icons/leftArrow.png' style={{height:30, width:40}}/>
             </a>
@@ -152,13 +122,6 @@ export default function About() {
            </div>
             
         </div>
-
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
-          </div>
-        ))}
-
               
         
         <div style={{display:'inline-block'}}>
@@ -172,7 +135,7 @@ export default function About() {
           <p>Applied & Natural Sciences</p>
           <p>Business & Media</p>
           <p>Computing & IT</p>
-          <p>Engineering</p>
+          <p>Engineerin</p>
           <p>Health Sciences</p>
           <p>Trades & Apprenticeships</p>
         </ul>
@@ -186,4 +149,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+}

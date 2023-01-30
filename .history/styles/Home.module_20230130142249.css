@@ -6,10 +6,6 @@
  
 }
 
-#firstName, #lastName, #email {
-  background-color: white;
-}
-
 .solid {
   border-top: 4px solid var(--secondary-color);
   border-bottom: 0px;

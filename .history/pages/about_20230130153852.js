@@ -155,10 +155,13 @@ export default function About() {
 
         {words.map((word) => (
           <div key={word.id}>
-          <p>{word.value}</p>
+          <h2>{word.value}</h2>
           </div>
-        ))}
+        ))};
 
+        <div>
+          <p>{words.value}</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>
@@ -184,6 +187,6 @@ export default function About() {
       <footer className={styles.footer}>
 
       </footer>
-    </div></>
-  )
-        }
+    </div>
+
+

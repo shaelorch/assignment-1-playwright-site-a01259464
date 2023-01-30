@@ -32,16 +32,9 @@ export default function About() {
         }
     ]
 
-      const wordValue = words.map(word => {
-        const container = {};
 
-        container[word.id] = word.value;
 
-        return container;
-      })
-      console.log(wordValue);
 
-    
         
   return (
     <><Menu /><div className={styles.container}>
@@ -152,13 +145,6 @@ export default function About() {
            </div>
             
         </div>
-
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
-          </div>
-        ))}
-
               
         
         <div style={{display:'inline-block'}}>
@@ -186,4 +172,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+}

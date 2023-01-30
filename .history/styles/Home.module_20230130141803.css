@@ -6,10 +6,6 @@
  
 }
 
-#firstName, #lastName, #email {
-  background-color: white;
-}
-
 .solid {
   border-top: 4px solid var(--secondary-color);
   border-bottom: 0px;
@@ -108,21 +104,34 @@
 }
 
 .slideImg {
-  width: 100%;
+  width: 1500px;
   height: 300px;
+  clear: both;
   position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
   display: flex;
   justify-content: center;
 }
 
-/* .slide {
+.slide {
   float: left;
   margin: 0px;
   padding: 0px;
   position: relative;
-} */
+}
 
-
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
 
 .hrLines {
   position:relative;

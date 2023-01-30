@@ -40,8 +40,6 @@ export default function About() {
         return container;
       })
       console.log(wordValue);
-
-    
         
   return (
     <><Menu /><div className={styles.container}>
@@ -153,12 +151,9 @@ export default function About() {
             
         </div>
 
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
-          </div>
-        ))}
-
+        <div>
+          <p>`hello ${words.value.id}`</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>
@@ -186,4 +181,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+}

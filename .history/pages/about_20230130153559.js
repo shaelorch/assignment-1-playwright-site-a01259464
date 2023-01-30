@@ -153,12 +153,15 @@ export default function About() {
             
         </div>
 
-        {words.map((word) => (
-          <div key={word.id}>
-          <p>{word.value}</p>
+        {notes.map((note) => (
+          <div key={note.id}>
+          <h2>{note.text}</h2>
           </div>
-        ))}
+        )};
 
+        <div>
+          <p>{words.value}</p>
+        </div>
               
         
         <div style={{display:'inline-block'}}>
@@ -186,4 +189,4 @@ export default function About() {
       </footer>
     </div></>
   )
-        }
+{'}'}

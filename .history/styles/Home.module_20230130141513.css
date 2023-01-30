@@ -6,10 +6,6 @@
  
 }
 
-#firstName, #lastName, #email {
-  background-color: white;
-}
-
 .solid {
   border-top: 4px solid var(--secondary-color);
   border-bottom: 0px;
@@ -107,22 +103,19 @@
   /* overflow: hidden; */
 }
 
-.slideImg {
-  width: 100%;
+.slide {
+  width: 1500px;
+  background-color: pink;
   height: 300px;
+  clear: both;
   position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
   display: flex;
   justify-content: center;
 }
-
-/* .slide {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-} */
-
-
 
 .hrLines {
   position:relative;
