@@ -185,10 +185,10 @@
 
 #testOnImageHere {
   background-color: rgba(16, 46, 53, 0.5);
-  display: flex;
+  
   position: absolute;
   top:40%;
-  justify-content: center;
+  left:50%;
 
 }
 

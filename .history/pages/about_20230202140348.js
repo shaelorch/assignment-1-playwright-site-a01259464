@@ -6,7 +6,6 @@ import ArrowKeys from '../components/arrows'
 import { useRef } from 'react'
 import ImageSlider from '../components/imageSlider'
 import { SliderData } from '../components/sliderData'
-import { Words } from '../components/words'
 
 export default function About() {
 
@@ -72,7 +71,7 @@ export default function About() {
       
         <div id={styles.carouselImage}>
 
-          <ImageSlider  slides={SliderData}/>
+          <ImageSlider slides={SliderData}/>
             
           
             

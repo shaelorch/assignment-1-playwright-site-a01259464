@@ -6,12 +6,50 @@ import ArrowKeys from '../components/arrows'
 import { useRef } from 'react'
 import ImageSlider from '../components/imageSlider'
 import { SliderData } from '../components/sliderData'
-import { Words } from '../components/words'
 
 export default function About() {
 
-      
-      return (
+  
+    let words = [
+        {
+            id : 0,
+            value : "Achieve Excellence"
+        },
+        {
+            id : 1,
+            value : "Embrace Innovation"
+        },
+        {
+            id : 2,
+            value : "Champion Diversity"
+        },
+        {
+            id : 3,
+            value : "Pursue Collaboration"
+        },
+        {
+            id: 4,
+            value : "Engage With Respect"
+        }
+    ]
+
+      const wordValue = words.map(word => {
+        const container = {};
+
+        container[word.id] = word.value;
+
+        return container;
+      })
+      console.log(wordValue);
+
+      const activeSlideRef = useRef(null);
+
+
+
+
+    
+        
+  return (
     <><Menu /><div className={styles.container}>
       
       <ArrowKeys uplink='/' dlink='/contact'/>
@@ -72,11 +110,17 @@ export default function About() {
       
         <div id={styles.carouselImage}>
 
-          <ImageSlider  slides={SliderData}/>
+          <ImageSlider slides={SliderData}/>
             
           
             
         </div>
+
+        {words.map((word) => (
+          <div key={word.id}>
+          <p>{word.value}</p>
+          </div>
+        ))}
 
               
         

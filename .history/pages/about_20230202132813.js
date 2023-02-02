@@ -4,14 +4,52 @@ import styles from '../styles/Home.module.css'
 import Menu from '../components/menu'
 import ArrowKeys from '../components/arrows'
 import { useRef } from 'react'
-import ImageSlider from '../components/imageSlider'
-import { SliderData } from '../components/sliderData'
-import { Words } from '../components/words'
+import { ImageSlider } from '../components/imageSlider'
+
 
 export default function About() {
 
-      
-      return (
+  
+    let words = [
+        {
+            id : 0,
+            value : "Achieve Excellence"
+        },
+        {
+            id : 1,
+            value : "Embrace Innovation"
+        },
+        {
+            id : 2,
+            value : "Champion Diversity"
+        },
+        {
+            id : 3,
+            value : "Pursue Collaboration"
+        },
+        {
+            id: 4,
+            value : "Engage With Respect"
+        }
+    ]
+
+      const wordValue = words.map(word => {
+        const container = {};
+
+        container[word.id] = word.value;
+
+        return container;
+      })
+      console.log(wordValue);
+
+      const activeSlideRef = useRef(null);
+
+
+
+
+    
+        
+  return (
     <><Menu /><div className={styles.container}>
       
       <ArrowKeys uplink='/' dlink='/contact'/>
@@ -71,12 +109,57 @@ export default function About() {
        
       
         <div id={styles.carouselImage}>
-
-          <ImageSlider  slides={SliderData}/>
             
+              <div className={styles.slide}>
+                <img style={{height:200}} src="carousel-images/0.jpg"/>
+              </div> 
+              
+            <div id={styles.testOnImageHere}>
+             
+            </div>
+
           
+              <div className={styles.slide}>
+                <img style={{height:200}} src="carousel-images/1.jpg"/>
+              </div> 
+              <div id={styles.testOnImageHere}>{words.value}</div>
+
+              <div className={styles.slide}>
+                <img style={{height:200}} src="carousel-images/2.jpg"/>
+              </div> 
+              
+              <div id={styles.testOnImageHere}>{words.value}</div>
+            
+              <div className={styles.slide}>
+                <img style={{height:200}} src="carousel-images/3.jpg"/>
+              </div> 
+              
+            <div id={styles.testOnImageHere}>{words.value}</div>
+
+              <div className={styles.slide}>
+                <img style={{height:200}} src="carousel-images/4.jpg"/>
+              </div> 
+              
+          <div id={styles.testOnImageHere}>{words.value}</div>
+
+
+
+           <div className={styles.buttonCont}>
+            <a >
+              <img className={styles.carouselButtonPrev} src='icons/leftArrow.png' style={{height:30, width:40}}/>
+            </a>
+            <a className={styles.carouselButtonNext}>
+              <img  className={styles.carouselButtonNext} src='icons/rightArrow.png' style={{height:30, width:40}}/>
+            </a>
+           </div>
             
         </div>
+
+        {words.map((word) => (
+          <div key={word.id}>
+          <p>{word.value}</p>
+          </div>
+        ))}
 
               
         

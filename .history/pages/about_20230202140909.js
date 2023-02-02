@@ -72,7 +72,7 @@ export default function About() {
       
         <div id={styles.carouselImage}>
 
-          <ImageSlider  slides={SliderData}/>
+          <ImageSlider words={Words} slides={SliderData}/>
             
           
             

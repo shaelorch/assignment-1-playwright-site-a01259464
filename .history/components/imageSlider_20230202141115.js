@@ -8,23 +8,22 @@ export default function ImageSlider({slides}) {
     const [caption, setCaption] = useState(0);
     const [current, setCurrent] = useState(0);
     const length = slides.length
-    const tlength = Words.length
+    const tlength = words.length
     
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1)
-        setCaption(caption === tlength - 1 ? 0 : caption + 1)
+        setCaption(current === tlength - 1 ? 0 : current + 1)
     }
 
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
-        setCaption(caption === 0 ? tlength - 1 : caption - 1)
+        setCaption(current === 0 ? tlength - 1 : current - 1)
     }
 
     console.log(current);
-    console.log(caption);
 
     
-    const wordValue = Words.map(word => {
+    const wordValue = words.map(word => {
         const container = {};
 
         container[word.id] = word.value;
@@ -33,17 +32,20 @@ export default function ImageSlider({slides}) {
       })
       console.log(wordValue);
 
-
     if(!Array.isArray(slides) || slides.length <= 0){
         return null;
     }
-    if(!Array.isArray(Words) || Words.length <= 0){
+
+    if(!Array.isArray(words) || slides.length <= 0){
         return null;
     }
 
-  
+    {words.map((word) => (
+        <div key={word.id}>
+        <p>{word.value}</p>
+        </div>
+      ))}
 
-   
     return (
         <div>
              
@@ -55,23 +57,12 @@ export default function ImageSlider({slides}) {
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
                         {index === current && (
                             <img src={slide.image} className={styles.slide} />
+
                         )}
                     </div>
+                  
                 )
             })}
-            {Words.map((word, index) => {
-                return (
-                    <div className={index === caption ? 'slide active' : 'slide'} key={index}>
-                        {index === caption && (
-                            <div id={styles.testOnImageHere}>
-                            <p>{word.value}</p>
-                            </div>
-                        )}
-                    </div>
-                )
-            })}
-
-
         </div>
     )
 }

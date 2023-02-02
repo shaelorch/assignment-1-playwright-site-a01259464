@@ -59,10 +59,11 @@ export default function ImageSlider({slides}) {
                     </div>
                 )
             })}
-            {Words.map((word, index) => {
+
+                {Words.map((word) => {
                 return (
-                    <div className={index === caption ? 'slide active' : 'slide'} key={index}>
-                        {index === caption && (
+                    <div  className={index === current ? 'caption active' : 'caption'} key={index}>
+                        {index === current && (
                             <div id={styles.testOnImageHere}>
                             <p>{word.value}</p>
                             </div>
@@ -70,7 +71,6 @@ export default function ImageSlider({slides}) {
                     </div>
                 )
             })}
-
 
         </div>
     )

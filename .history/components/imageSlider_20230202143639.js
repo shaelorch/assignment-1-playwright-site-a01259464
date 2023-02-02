@@ -37,9 +37,6 @@ export default function ImageSlider({slides}) {
     if(!Array.isArray(slides) || slides.length <= 0){
         return null;
     }
-    if(!Array.isArray(Words) || Words.length <= 0){
-        return null;
-    }
 
   
 
@@ -59,18 +56,18 @@ export default function ImageSlider({slides}) {
                     </div>
                 )
             })}
-            {Words.map((word, index) => {
+
+                {Words.map((word) => {
                 return (
-                    <div className={index === caption ? 'slide active' : 'slide'} key={index}>
+                    <div  >
                         {index === caption && (
                             <div id={styles.testOnImageHere}>
-                            <p>{word.value}</p>
+                            <p >{word.value}</p>
                             </div>
                         )}
                     </div>
                 )
             })}
-
 
         </div>
     )

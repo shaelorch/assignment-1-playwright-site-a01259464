@@ -22,22 +22,19 @@ export default function ImageSlider({slides}) {
 
     console.log(current);
     console.log(caption);
+    console.log(words);
 
     
-    const wordValue = Words.map(word => {
-        const container = {};
+    // const wordValue = Words.map(word => {
+    //     const container = {};
 
-        container[word.id] = word.value;
+    //     container[word.id] = word.value;
 
-        return container;
-      })
-      console.log(wordValue);
-
+    //     return container;
+    //   })
+    //   console.log(wordValue);
 
     if(!Array.isArray(slides) || slides.length <= 0){
-        return null;
-    }
-    if(!Array.isArray(Words) || Words.length <= 0){
         return null;
     }
 
@@ -59,18 +56,18 @@ export default function ImageSlider({slides}) {
                     </div>
                 )
             })}
-            {Words.map((word, index) => {
+
+                {Words.map((word, index) => {
                 return (
-                    <div className={index === caption ? 'slide active' : 'slide'} key={index}>
+                    <div className={index === caption ? 'slide active' : 'slide'} key={index} >
                         {index === caption && (
                             <div id={styles.testOnImageHere}>
-                            <p>{word.value}</p>
+                            <p >{word.value}</p>
                             </div>
                         )}
                     </div>
                 )
             })}
-
 
         </div>
     )

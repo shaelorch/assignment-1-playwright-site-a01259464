@@ -159,7 +159,7 @@
 .carouselButtonPrev {
   position:absolute;
   top:45%;
-  right:75%;
+  right:335%;
   opacity: 100%;
   
 }
@@ -167,7 +167,7 @@
 .carouselButtonNext {
   position:absolute;
   top:45%;
-  right:20%;
+  right:32px;
   opacity:100%;
 }
 
@@ -185,10 +185,10 @@
 
 #testOnImageHere {
   background-color: rgba(16, 46, 53, 0.5);
-  display: flex;
+  padding: 10px;
+  margin: 0px 50px;
+  margin-bottom:20%;
   position: absolute;
-  top:40%;
-  justify-content: center;
 
 }
 
