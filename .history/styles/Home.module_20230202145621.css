@@ -142,7 +142,7 @@
   background-size: cover;
   display:flex;
   justify-content: center;
-  
+  align-content: center;
   align-items: center;
   margin: 40px 0px;
   overflow: hidden;
@@ -189,10 +189,8 @@
   display: flex;
   position: absolute;
   top:40%;
-  text-align: center;
-  left:30%;
-  right:35%;
-  align-items: center;
+  justify-content: center;
+
 }
 
 
