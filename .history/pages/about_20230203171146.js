@@ -64,30 +64,31 @@ export default function About() {
         <div id={styles.carouselImage}>
 
           <ImageSlider  slides={SliderData}/>
-          
 
 
-
-
-          
-        </div>
-
-              
-        
         <div style={{display:'inline-block'}}>
           
           <h1 className={styles.hrLines}>Departments</h1>
         
         </div>
-         
+          
+
           <ul style={{display:'flex', justifyContent:'center', lineHeight:2, flexDirection: 'column'}}>
-          <li>Applied & Natural Sciences</li>
-          <li>Business & Media</li>
-          <li>Computing & IT</li>
-          <li>Engineerin</li>
-          <li>Health Sciences</li>
-          <li>Trades & Apprenticeships</li>
-        </ul>
+                    <p>Applied & Natural Sciences</p>
+                    <p>Business & Media</p>
+                    <p>Computing & IT</p>
+                    <p>Engineering</p>
+                    <p>Health Sciences</p>
+                    <p>Trades & Apprenticeships</p>
+                  </ul>
+
+
+
+        </div>
+
+              
+       
+          
      
         
 

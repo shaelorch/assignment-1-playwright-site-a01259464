@@ -156,7 +156,7 @@
   align-items: center;
   margin: 40px 0px;
   overflow: hidden;
-  
+  z-index: 3;
   
 }
 
@@ -174,7 +174,7 @@
   top:45%;
   right:75%;
   opacity: 100%;
- 
+  z-index: 2;
   
 }
 
@@ -183,7 +183,7 @@
   top:45%;
   right:20%;
   opacity:100%;
-  
+  z-index: 1;
 }
 
 .carouselButtonPrev:hover {

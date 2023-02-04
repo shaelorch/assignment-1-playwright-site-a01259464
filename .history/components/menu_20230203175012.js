@@ -21,8 +21,8 @@ export default function Menu() {
     <div style={{ display: showMenu ? 'flex' : 'none', position:'fixed', top:50, left:20}}>
             <img src='/background-images/menuBackground.png' style={{height:250, width:250, position:'absolute', top:-50, left:-20}}/>
             
-            <h4 onClick={handleClickMenu} style={{zIndex:1}}>X</h4>
-            <ul style={{ display: 'flex', flexDirection: 'column', zIndex:2, lineHeight:3}}>
+            <h2 onClick={handleClickMenu} style={{zIndex:6}}>X</h2>
+            <ul style={{ display: 'flex', flexDirection: 'column', zIndex:7, lineHeight:3}}>
                 <a href='/'>Home</a>
                 <a href='/about'>About</a>
                 <a href='/contact'>Contact</a>

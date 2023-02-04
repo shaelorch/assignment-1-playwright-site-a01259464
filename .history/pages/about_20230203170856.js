@@ -53,9 +53,7 @@ export default function About() {
         <div>
           <p>If you missed our fall event, the next Big info is scheduled to return on February 15, 2023.</p>
         </div>
-        <div>
-          <h3>Campus Tours</h3>
-        </div>
+        <div><h3>Campus Tours</h3></div>
         <div>
           <p>Tours runs weekdays September to Map, on our Burnaby campus. See BCIT in person and get a taste of campus life.</p>
         </div>
@@ -64,11 +62,6 @@ export default function About() {
         <div id={styles.carouselImage}>
 
           <ImageSlider  slides={SliderData}/>
-          
-
-
-
-
           
         </div>
 
@@ -80,13 +73,13 @@ export default function About() {
         
         </div>
          
-          <ul style={{display:'flex', justifyContent:'center', lineHeight:2, flexDirection: 'column'}}>
-          <li>Applied & Natural Sciences</li>
-          <li>Business & Media</li>
-          <li>Computing & IT</li>
-          <li>Engineerin</li>
-          <li>Health Sciences</li>
-          <li>Trades & Apprenticeships</li>
+          <ul style={{display:'flex', justifyContent:'center', lineHeight:2}}>
+          <p>Applied & Natural Sciences</p>
+          <p>Business & Media</p>
+          <p>Computing & IT</p>
+          <p>Engineering</p>
+          <p>Health Sciences</p>
+          <p>Trades & Apprenticeships</p>
         </ul>
      
         

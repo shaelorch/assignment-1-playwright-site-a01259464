@@ -153,11 +153,10 @@
   background-size: cover;
   display:flex;
   justify-content: center;
+  
   align-items: center;
   margin: 40px 0px;
   overflow: hidden;
-  
-  
 }
 
 .slide {
@@ -174,7 +173,6 @@
   top:45%;
   right:75%;
   opacity: 100%;
- 
   
 }
 
@@ -183,7 +181,6 @@
   top:45%;
   right:20%;
   opacity:100%;
-  
 }
 
 .carouselButtonPrev:hover {

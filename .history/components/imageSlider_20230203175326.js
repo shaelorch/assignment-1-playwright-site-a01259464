@@ -49,7 +49,7 @@ export default function ImageSlider({slides}) {
              
            
               <img className={styles.carouselButtonPrev} src='/icons/leftArrow.png' style={{height:30, width:40, zIndex: 1}} onClick={prevSlide} />
-              <img  className={styles.carouselButtonNext} src='/icons/rightArrow.png' style={{height:30, width:40, zIndex: 2}} onClick={nextSlide}/>
+              <img  className={styles.carouselButtonNext} src='/icons/rightArrow.png' style={{height:30, width:40}} onClick={nextSlide}/>
                 {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>

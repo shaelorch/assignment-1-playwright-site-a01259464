@@ -78,7 +78,7 @@ if (validLastName.test(lastName)) {
           <p>Want to discuss? Lets chat!</p>
         </div>
 
-        <div>
+    
           <form className={styles.form}>
             <fieldset style={{paddingRight:'10%', paddingLeft:'10%'}}>
               <table className={styles.row}>
@@ -121,7 +121,7 @@ if (validLastName.test(lastName)) {
             {firstNameErr && <p style={{color:'red'}}>First name error. First letter must be capital. Must use alphabets only.</p>}
             {lastNameErr && <p style={{color:'red'}}>Last name error. First letter must be capital. Must use alphabets only.</p>}
           </form>
-        </div>
+        
 
     
       </main>

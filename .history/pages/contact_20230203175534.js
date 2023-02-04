@@ -49,6 +49,7 @@ if (validLastName.test(lastName)) {
 }
    
 });
+
   return ( 
     <><Menu /><div className={styles.contactContainer}>
       <Head>
@@ -78,26 +79,26 @@ if (validLastName.test(lastName)) {
           <p>Want to discuss? Lets chat!</p>
         </div>
 
-        <div>
+    
           <form className={styles.form}>
             <fieldset style={{paddingRight:'10%', paddingLeft:'10%'}}>
               <table className={styles.row}>
                <thead style={{fontWeight:'bold'}}> First Name:
-                  <tr > 
+                  <tr/> 
                     <input id={styles.firstName}
                     placeholder='First Name Here'
                     type="first name" 
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}></input>
-                  
-                  
+                 
+                  <tr/>
                     <h4>Email:</h4>
                     <input  id={styles.email} 
                       placeholder='Email Here'
                       type="email" 
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}></input>
-                  </tr> 
+                  
                 </thead>
                  
               
@@ -121,7 +122,7 @@ if (validLastName.test(lastName)) {
             {firstNameErr && <p style={{color:'red'}}>First name error. First letter must be capital. Must use alphabets only.</p>}
             {lastNameErr && <p style={{color:'red'}}>Last name error. First letter must be capital. Must use alphabets only.</p>}
           </form>
-        </div>
+        
 
     
       </main>

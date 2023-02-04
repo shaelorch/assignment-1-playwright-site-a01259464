@@ -29,33 +29,42 @@ export default function About() {
       <main className={styles.main}>
 
         <div style={{display:'inline-block'}}>
+          
           <h1 className={styles.hrLines}>About Us</h1>
+        
         </div>
+
         <div>
           <p>We are proud to deliver an education that goes beyond textbooks and classrooms.</p>
         </div>
+
         <div>
           <p>Our students gain the technical skills, real-world experience, and problem solving ability needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
         </div>
+
         <div>
           <p>Through close collaboration with industry, our network of alumni and partners continue to achieve global success.</p>
         </div>
+
         <div>
-          <h2>Information Sessions</h2>
+          <h1>Information Sessions</h1>
         </div>
+
         <div>
           <p>Information sessions are a simple way to figure out the next step along your career path. Learn more about the programs that interest you.</p>
         </div>
-        <div><h2>Big Info</h2></div>
+
+        <div><h3>Big Info</h3></div>
+
         <div>
           <p>Big info is the largest program expo and information session at BCIT. It's your chance to find out about all of our programs - from business, computing, and health to engineering, trades and applied sciences.</p>
         </div>
         <div>
           <p>If you missed our fall event, the next Big info is scheduled to return on February 15, 2023.</p>
         </div>
-        <div>
-          <h3>Campus Tours</h3>
-        </div>
+
+        <div><h2>Campus Tours</h2></div>
+
         <div>
           <p>Tours runs weekdays September to Map, on our Burnaby campus. See BCIT in person and get a taste of campus life.</p>
         </div>
@@ -64,11 +73,6 @@ export default function About() {
         <div id={styles.carouselImage}>
 
           <ImageSlider  slides={SliderData}/>
-          
-
-
-
-
           
         </div>
 
@@ -80,15 +84,16 @@ export default function About() {
         
         </div>
          
-          <ul style={{display:'flex', justifyContent:'center', lineHeight:2, flexDirection: 'column'}}>
-          <li>Applied & Natural Sciences</li>
-          <li>Business & Media</li>
-          <li>Computing & IT</li>
-          <li>Engineerin</li>
-          <li>Health Sciences</li>
-          <li>Trades & Apprenticeships</li>
+        <div style={{display:'flex', justifyContent:'center', lineHeight:2}}>
+          <ul>
+          <p>Applied & Natural Sciences</p>
+          <p>Business & Media</p>
+          <p>Computing & IT</p>
+          <p>Engineering</p>
+          <p>Health Sciences</p>
+          <p>Trades & Apprenticeships</p>
         </ul>
-     
+        </div>
         
 
       </main>
